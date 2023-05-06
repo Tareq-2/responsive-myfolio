@@ -1,0 +1,85 @@
+@media (min-width:992px) and (max-width:1199.98px){
+    #banner .banner_content h1 {
+        font-size: 55px;
+        letter-spacing: 20px;
+    }
+    #banner .banner_content p {
+        font-size: 22px;
+    }
+    #mywork .mywork_item .overlay p {
+        font-size: 7px;
+        padding-top: 10px;
+    }
+    #mywork .mywork_item .overlay h4 {
+        font-size: 11px;
+    }
+    #mywork .mywork_item .overlay {
+        
+        padding: 40px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+    #banner .banner_content h1 {
+        font-size: 25px;
+        letter-spacing: 20px;
+        line-height: 50px;
+
+    }
+    #banner .banner_content h4 {
+        font-size: 25px;
+    
+    }
+    #mywork .mywork_item .overlay p {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    #mywork .mywork_item .overlay h4 {
+        font-size: 9px;
+    }
+    #mywork .mywork_item .overlay {
+        
+        padding: 25px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+    #banner .banner_content h1 {
+        font-size: 30px;
+        letter-spacing: 12px;
+        line-height: 45px;
+    }
+
+    #banner .banner_content h4 {
+        font-size: 20px;
+    
+    }
+    #banner .banner_content a {
+        font-size: 12px;
+        padding: 10px 35px;
+    }
+   
+}
+
+
+@media (max-width:575.98px) {
+    #banner .banner_content h1 {
+        font-size: 19px;
+        letter-spacing: 10px;
+        line-height: 40px;
+    }
+
+    #banner .banner_content h4 {
+        font-size: 15px;
+    }
+    #banner .banner_content a {
+        font-size: 12px;
+        padding: 8px 25px;
+    }
+    #banner .banner_content p{
+        font-size: 12px;
+    }
+    #banner .banner_content img {
+        margin: 30px auto;
+    }
+}

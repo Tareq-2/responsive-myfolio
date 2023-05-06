@@ -1,0 +1,287 @@
+
+/* Common Css Start */
+:root {
+    --hlt-color:#cfc91d;
+    --primary-color: #02918b;
+    --secondary-color: #7e8287;
+    --light-text: #ffffff;
+    --dark-text: #0b1016;
+    --primary-font: "Open Sans", sans-serif;
+  }
+  body {
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  span,
+  small {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol,
+  ul {
+    list-style-type: none;
+  }
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  .section_info{
+    text-align: center;
+  }
+  .section_info h2 {
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  
+  .section_info p {
+    font-size: 16px;
+    line-height: 41px;
+    color: var(--secondary-color);
+  }
+  .section_info p span {
+    font-size: 23px;
+    font-weight: 800;
+  }
+  /* Common Css End */
+
+/* Nav Section Css Start */
+#nav{
+    background: var(--primary-color);
+  }
+  #nav #nav_menu ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--light-text);
+    text-transform: uppercase;
+    padding: 13.5px 25px;
+  }
+  /* Nav Section Css End */
+
+  
+/* Banner Section Css Start */
+#banner{
+    height: 728px;
+    background-image: url(../img/myfolio\ cover.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+  #banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+    z-index: -1;
+  }
+  #banner .banner_content{
+    color: var(--light-text);
+  }
+  #banner .banner_content h4 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  #banner .banner_content h1 {
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    line-height: 75px;
+    text-transform: uppercase;
+  }
+  
+  #banner .banner_content p {
+    font-size: 16px;
+  }
+  #banner .banner_content img{
+    margin:38px auto;
+  }
+  
+  #banner .banner_content a {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--dark-text);
+    background-color: var(--hlt-color);
+    padding: 14px 57px;
+    display: inline-block;
+    -webkit-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+  }
+  
+  #banner .banner_content a:hover {
+    border-radius: 15px;
+  }
+  /* Banner Section Css End */
+
+  /* About Section Css Start */
+#about{
+    padding: 100px 0;
+  }
+  #about .section_info{
+    margin-bottom: 50px;
+  }
+  #about .about_item {
+    border-right: 1px solid var(--secondary-color);
+    padding: 35px 62px 55px;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+  }
+  
+  #about .about_item:last-child{
+    border-right-color: transparent;
+  }
+  
+  #about .about_item h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  
+  #about .about_item p {
+    font-size: 11px;
+    line-height: 21px;
+  }
+  /* About Section Css End */
+
+  
+/* Service Section Css Start */
+#service{
+    background-image: url(../img/service_sec_pic.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+  }
+  #service .about_item {
+    padding-right: 70px;
+    margin-bottom: 30px;
+    color: #7e8287;
+  }
+  #service .about_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  #service .about_item p{
+    font-size: 13px;
+    padding-top: 20px;
+    
+}
+
+  /* Service Section Css End */
+
+  /* mywork Section Css start */
+
+  #mywork{
+    padding-top: 50px;
+  }
+
+  #mywork .mywork_item{
+    position: relative;
+}
+#mywork .mywork_item img{
+    width: 100%;
+    display: block;
+    
+}
+#mywork .mywork_item .overlay{
+    position: absolute;
+    z-index: 1;
+    inset: 20px 27px;
+    background-color: rgba(2,145,139,0.85);
+    transform: scale(0);
+    transform-origin: right bottom;
+    transition: .5s;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+#mywork .mywork_item:hover .overlay{
+    transform: scale(1);
+    transform-origin: left bottom;
+}
+#mywork .mywork_item .overlay p{
+    font-size: 13px;
+    padding-top: 15px;
+  }
+
+  #mywork .mywork_item .overlay h4{
+    font-size: 16px;
+    font-weight: 800;
+  
+  }
+
+  /* mywork Section Css end*/
+
+  
+/* contact section css start */
+#contact{
+  padding-top: 50px;
+}
+#contact .section_info{
+  margin-bottom: 30px;
+}
+
+#contact .section_info p{
+  
+  margin-bottom: 50px;
+}
+#contact .contact_form{
+  background-color:#0a0a0b;
+  padding: 40px;
+}
+#contact .contact_form input,
+#contact .contact_form textarea{
+  display: block;
+
+  border: none;
+  border-bottom: 1px solid #7e8287;
+  background: none;
+  font-size: 16px;
+  padding: 18px;
+  margin: auto;
+  margin-bottom: 51px;
+  text-align: center;
+  color: #7e8287;
+}
+#contact .contact_form textarea{
+  resize: none;
+  font-family: 'Open Sans', sans-serif;
+}
+#contact .contact_form input::placeholder,
+#contact .contact_form textarea::placeholder{
+  text-transform: uppercase;
+}
+#contact .contact_form button{
+  display: block;
+  margin: auto;
+ background-color: #cfc91d;
+ padding: 18px 63px;
+ font-size: 11px;
+ border: none;
+
+}
+
+/* contact section css end */
+
+/* footer section css start */
+footer{
+  background-color: black;
+  padding: 35px 0;
+  color:#7e8287 ;
+  text-align: center;
+}
+/* footer section css end */
+
